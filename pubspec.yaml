@@ -49,6 +49,7 @@ dependencies:
   shimmer: ^3.0.0
   audioplayers: ^5.2.1
   transition: ^2.0.2
+  adaptive_theme: ^3.5.0
 
 dev_dependencies:
   flutter_test:

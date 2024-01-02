@@ -1,3 +1,4 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:bookapp_flutter/data/local/shared_preferences.dart';
 import 'package:bookapp_flutter/ui/pages/dashboard/dashboard_page.dart';
 import 'package:bookapp_flutter/ui/pages/home/home_page.dart';
@@ -23,21 +24,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      initialRoute: "/",
-      routes: {
-        "/": (context) => const SplashPage(),
-        "register": (context) => RegisterPage(),
-        "login": (context) => LoginPage(),
-        "home": (context) => const HomePage(),
-        "dashboard": (context) => const DashboardPage(),
-      },
-    );
+    return AdaptiveTheme(
+        light: ThemeData.light(useMaterial3: true),
+        dark: ThemeData.dark(useMaterial3: true),
+        initial: AdaptiveThemeMode.light,
+        builder: (theme, darkTheme) => MaterialApp(
+              debugShowCheckedModeBanner: false,
+              title: 'Adaptive Theme Demo',
+              theme: theme,
+              darkTheme: darkTheme,
+              initialRoute: "/",
+              routes: {
+                "/": (context) => const SplashPage(),
+                "register": (context) => RegisterPage(),
+                "login": (context) => LoginPage(),
+                "home": (context) => const HomePage(),
+                "dashboard": (context) => const DashboardPage(),
+              },
+            ));
   }
 }
