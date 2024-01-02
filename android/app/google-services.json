@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "916806419777",
+    "firebase_url": "https://flutter-f33dd-default-rtdb.firebaseio.com",
+    "project_id": "flutter-f33dd",
+    "storage_bucket": "flutter-f33dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916806419777:android:243bfe45410b2d540a8dc0",
+        "android_client_info": {
+          "package_name": "com.example.contact"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDONSBF3xXxLFiWlmDVA6Kslt9_08N6fGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916806419777:android:4e1b706843161f990a8dc0",
+        "android_client_info": {
+          "package_name": "uz.gita.bookapp_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDONSBF3xXxLFiWlmDVA6Kslt9_08N6fGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
