@@ -50,6 +50,7 @@ dependencies:
   audioplayers: ^5.2.1
   transition: ^2.0.2
   adaptive_theme: ^3.5.0
+  advance_pdf_viewer2: ^2.0.5+1
 
 dev_dependencies:
   flutter_test:
